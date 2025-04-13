@@ -1,11 +1,11 @@
-const express = require("express");
-const axios = require("axios");
+import express from 'express';
+import axios from 'axios';
+
 const router = express.Router();
 
 const CLAUDE_API_KEY = process.env.CLAUDE_API_KEY;
 const CLAUDE_API_URL = "https://api.anthropic.com/v1/messages";
 
-// ✅ System prompt must be passed as a top-level field (NOT as a message)
 const systemPrompt = `
 You are Bardak Bot, a helpful coding assistant.
 
@@ -26,7 +26,7 @@ router.post("/chat", async (req, res) => {
       {
         model: "claude-3-opus-20240229",
         max_tokens: 1000,
-        system: systemPrompt, // ✅ Top-level system field
+        system: systemPrompt,
         messages: [
           {
             role: "user",
@@ -59,4 +59,4 @@ router.post("/chat", async (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
