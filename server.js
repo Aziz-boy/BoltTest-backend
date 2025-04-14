@@ -3,7 +3,7 @@ import mongoose from 'mongoose';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
-import chatRoute from './routes/chat.js'; 
+import chatRoute from './routes/chat.js'; // ✅ ESM import
 
 
 dotenv.config();
