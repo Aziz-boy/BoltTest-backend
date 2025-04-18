@@ -48,7 +48,8 @@ b) Madrid
 c) Paris 
 d) Lyon 
 Answer: c)
-
+ 
+u must suggest  a b c d asncwer options for this as well as multiple choice question
 MATCHING FORMAT:
 Match the historical figures in Column A with their achievements in Column B.
 
