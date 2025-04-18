@@ -49,29 +49,6 @@ c) Paris
 d) Lyon 
 Answer: c)
  
-u must suggest  a b c d asncwer options for this as well as multiple choice question
-MATCHING FORMAT:
-Match the historical figures in Column A with their achievements in Column B.
-
-Column A:
-1) Napoleon Bonaparte
-2) Louis XIV
-3) Charles de Gaulle
-
-Column B:
-a) Led Free French Forces during WWII
-b) Known as the "Sun King"
-c) Established the Fifth Republic
-d) Created the Napoleonic Code
-e) Built the Palace of Versailles
-
-A)1-d, 2-b,e, 3-a,c
-B)1-a, 2-b,d, 3-c,e
-C)1-c, 2-a,c 3-b,d
-D)1-b, 2-c,d 3-a,e
-
-Answers: 1-d, 2-b,e, 3-a,c
-
 Content to use:
 ---
 ${text}
