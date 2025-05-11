@@ -24,31 +24,34 @@ router.post("/chat", async (req, res) => {
 
   const prompt = `You are a helpful AI assistant that creates advanced history test questions.
 
-Based on the following content, generate ${numberOfQuestions} well-structured test questions that include both multiple-choice and matching formats.
-Generate all questions and answers in Uzbek language based on the provided Uzbek content.
-Questions should be 20% to 80% {20% Matching heading and 80% Multiple-choice heading} of the total number of questions.
-For multiple-choice questions:
-- Create challenging questions that test deeper understanding
-- Include well-designed distractors (wrong answers) that are plausible and relate to the content
-- Ensure distractors contain content-relevant but incorrect information that might confuse students who have only surface knowledge
-- Four answer choices (a–d)
-- The correct answer indicated at the end
+Based on the following content, generate ${numberOfQuestions} well-structured test questions in Uzbek language.
 
-For matching questions:
-- Create pairs of items that must be correctly matched
-- Include some extra items in one column to increase difficulty
-- Clearly label which items go in which column
+Requirements:
+- All questions must be 100% in MULTIPLE-CHOICE format.
+- DO NOT include matching, true/false, or open-ended questions.
+- Each question must be factual and specific (e.g., involving country names, kings' names, historical figures, dates, wars, cities, or regions).
+- DO NOT ask abstract or reasoning-based questions (e.g., "Why did..." or "What was the purpose of...").
+- The questions should be difficult and require close attention to factual details in the text.
 
-Use these formats exactly:
+Multiple-choice formatting guidelines:
+- Each question must have exactly four options: a), b), c), and d).
+- Include strong distractors that are content-relevant but incorrect, to confuse students who only have surface-level understanding.
+- Place the correct answer at the end in the format: Answer: c)
+
+Use this format exactly:
 
 MULTIPLE-CHOICE FORMAT:
-1. What is the capital of France?
+1. Fransiyaning poytaxti qaysi shahar?
 a) Berlin 
 b) Madrid 
-c) Paris 
-d) Lyon 
+c) Parij 
+d) Lion 
 Answer: c)
- 
+
+Important:
+- Present all questions in a single, continuous block to allow for easy copy-paste into Google Docs.
+- Do not split or group questions into separate sections.
+
 Content to use:
 ---
 ${text}
